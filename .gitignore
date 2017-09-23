@@ -2,3 +2,4 @@
 *.sqlite3
 *.pyc
 project/static/*
+.idea

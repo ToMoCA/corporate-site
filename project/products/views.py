@@ -1,6 +1,10 @@
 from django.views import generic
+from django.shortcuts import render
 
 from .models import Product
+
+def home_page(request):
+    return render(request, 'products/index.html')
 
 class IndexView(generic.ListView):
     template_name = 'products/list.html'

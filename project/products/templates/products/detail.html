@@ -1,69 +1,84 @@
 {% extends 'products/base.html' %}
 
 {% block content %}
-<div>
-    <u>
-      <h4>製品名 / Product Name</h4>
-    </u>
-    <p>
-      {{ product.product_text }}
-    </p>
 
-    <u>
-      <h4>価格 / Price</h4>
-    </u>
-    <p>
-      {{ product.price }}
-    </p>
 
-    <u>
-      <h4>メーカー / Brand</h4>
-    </u>
-    <p>
-      {{ product.brand }}
-    </p>
+<div class="panel panel-default">
 
-    <u>
-      <h4>カテゴリ / Category</h4>
-    </u>
-    <p>
-      {{ product.category }}
-    </p>
+    <div class="panel-heading">
+        Product Detail
+    </div>
 
-    <u>
-      <h4>在庫状況 / Inventory Status</h4>
-    </u>
-    <p>
-      {{ product.inventory_status }}
-    </p>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
 
-    <u>
-      <h4>詳細説明 / Description</h4>
-    </u>
-    <p>
-      <!-- https://torina.top/detail/256/ -->
-      {% autoescape off %}
-        {{ product.description }}
-      {% endautoescape %}
-    </p>
+        <u>
+            <h4>製品名 / Product Name</h4>
+        </u>
+        <p>
+            {{ product.product_text }}
+        </p>
 
-    <table width="100%" class="table table-striped table-bordered table-hover">
-        <tbody>
-          <tr>
-            {% if product %}
-              {% for image in product.image_set.all %}
-                  <td>
+        <u>
+            <h4>価格 / Price</h4>
+        </u>
+        <p>
+            {{ product.price }}
+        </p>
+
+        <u>
+            <h4>メーカー / Brand</h4>
+        </u>
+        <p>
+            {{ product.brand }}
+        </p>
+
+        <u>
+            <h4>カテゴリ / Category</h4>
+        </u>
+        <p>
+            {{ product.category }}
+        </p>
+
+        <u>
+            <h4>在庫状況 / Inventory Status</h4>
+        </u>
+        <p>
+            {{ product.inventory_status }}
+        </p>
+
+        <u>
+            <h4>詳細説明 / Description</h4>
+        </u>
+        <p>
+            <!-- https://torina.top/detail/256/ -->
+            {% autoescape off %}
+            {{ product.description }}
+            {% endautoescape %}
+        </p>
+
+        <table width="100%" class="table table-striped table-bordered table-hover">
+            <tbody>
+            <tr>
+                {% if product %}
+                {% for image in product.image_set.all %}
+                <td>
                     <a href="{{ image.image.url }}" >
-                      <img src={{ image.image.url }}  class="img-responsive" alt="Smiley face">
+                        <img src={{ image.image.url }}  class="img-responsive" alt="Smiley face">
                     </a>
-                  </td>
-              {% endfor %}
-            {% endif %}
-          </tr>
-        </tbody>
-    </table>
+                </td>
+                {% endfor %}
+                {% endif %}
+            </tr>
+            </tbody>
+        </table>
 
-    <a class="btn btn-primary" target="_blank" href="/contact">Ask and Order</a>
+        <a class="btn btn-primary" target="_blank" href="/contact">Ask and Order</a>
+
+    </div>
+    <!-- /.panel-body -->
 </div>
+<!-- /.panel -->
+
 
 {% endblock %}

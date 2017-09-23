@@ -13,6 +13,8 @@
 
     <title>Creative - Start Bootstrap Theme</title>
 
+    <link rel="icon" href="{% static 'tomoca/img/favicon.ico' %}">
+
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'startbootstrap-creative/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -25,7 +27,7 @@
     <link href="{% static 'startbootstrap-creative/vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="{% static 'startbootstrap-creative/css/creative.min.css' %}" rel="stylesheet">
+    <link href="{% static 'tomoca/css/creative.css' %}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +47,10 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img alt="Corporate Logo" src="{% static 'tomoca/img/logo.png' %}" height="40px" style="padding-bottom: 10px;">
+                </a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

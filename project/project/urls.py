@@ -17,8 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from products import views as product_views
 
 urlpatterns = [
+    url(r'^$', product_views.home_page, name='home'),
+    url(r'^contact/$', product_views.contact, name='contact'),
     url(r'^products/', include('products.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^admin/', admin.site.urls),

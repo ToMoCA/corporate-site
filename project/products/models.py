@@ -22,13 +22,13 @@ class Product(models.Model):
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
-    IN_STOCK = '??? / In Stock'
-    OUT_OF_STOCK = '??? / Out of stock'
-    NEED_TO_CONFIRM = '??? / Need to confirm'
+    IN_STOCK = 'In Stock'
+    OUT_OF_STOCK = 'Out Of Stock'
+    NEED_TO_CONFIRM = 'Need To Confirm'
     INVENTORY_STATUS = (
-        (IN_STOCK, 'In Stock'),
-        (OUT_OF_STOCK, 'Out Of Stock'),
-        (NEED_TO_CONFIRM, 'Need To Confirm'),
+        (IN_STOCK, IN_STOCK),
+        (OUT_OF_STOCK, OUT_OF_STOCK),
+        (NEED_TO_CONFIRM, NEED_TO_CONFIRM),
     )
 
     inventory_status = models.CharField(

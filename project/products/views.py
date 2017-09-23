@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Product
 
 class IndexView(generic.ListView):
-    template_name = 'products/index.html'
+    template_name = 'products/list.html'
     context_object_name = 'product_list'
     # paginate_by = 5
     ordering = '-pk'

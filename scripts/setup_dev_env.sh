@@ -6,6 +6,6 @@ cd $SCRIPT_DIR/../
 
 git submodule init
 git submodule update
-python3 -m venv .env
+python3.6 -m venv .env
 source .env/bin/activate
-pip install -r requirements.txt
+pip3.6 install -r requirements.txt

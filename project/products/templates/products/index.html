@@ -8,10 +8,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="ToMoCA 株式会社の企業ページです。中古測定器の販売・調査は ToMoCA にお任せください。">
+    <meta name="author" content="ToMoCA 株式会社">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <meta property="og:title" content="ToMoCA 株式会社" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://http://www.tomoca.jp/" />
+    <meta property="og:image" content="http://www.tomoca.jp/img/header.jpg" />
+    <meta property="og:description" content="ToMoCA 株式会社の企業ページです。中古測定器の販売・調査は ToMoCA にお任せください。" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <title>トモカ株式会社 | 中古測定器の探索・販売のトモカです</title>
 
     <link rel="icon" href="{% static 'tomoca/img/favicon.ico' %}">
 
@@ -57,16 +64,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#services">サービス</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#products">製品</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#company">会社概要</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">お問合せ</a>
                     </li>
                 </ul>
             </div>
@@ -78,32 +85,23 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1 id="homeHeading">中古測定器の販売・調査は ToMoCA にお任せください!!</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p>
+                    スペクトラムアナライザ・ネットワークアナライザなどの半導体テスト装置をリーズナブルな価格で提供いたします。
+                </p>
+                <a href="{% url 'products:index' %}" class="btn btn-primary btn-xl page-scroll">
+                    製品はこちら
+                </a>
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">サービス</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -112,160 +110,217 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <i class="fa fa-4x fa-shopping-cart text-primary sr-icons"></i>
+                        <h3>中古測定器の売買</h3>
+                        <p class="text-muted">安心・誠実な取引を行います</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>迅速なシッピング</h3>
+                        <p class="text-muted">製品は最速で届きます</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>測定器の修理</h3>
+                        <p class="text-muted">ご要望に応じて柔軟に対応いたします</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>中古測定器の探索</h3>
+                        <p class="text-muted">お客様のニーズに追従します</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="portfolio-box">
-                        <img src="{% static 'startbootstrap-creative/img/portfolio/fullsize/1.jpg' %}" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">製品</h2>
+                    <hr class="primary">
+                    <p>
+                        ToMoCA で扱っている製品リストです。<br>
+                        測定機器についてのご注文・お問い合わせは<a href="/contact">こちら</a><br>
+                    </p>
+                    <a href="{% url 'products:index' %}" class="btn btn-primary btn-xl page-scroll">製品はこちら</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
 
-    <section id="contact">
+    <section id="company">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">会社概要</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>
+                        ToMoCA は中古測定器の販売と修理をコアビジネスとしております。<br>
+                        兵庫県で 2007 年創業のスタートアップです。<br>
+                        創業 10 年以上、お客様第一を考え、利便性を追求したサービスを今後も継続してゆきます。<br>
+                    </p>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-left">
+                    <table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <td>会社名</td>
+                            <td>トモカ株式会社</td>
+                        </tr>
+                        <tr>
+                            <td>本社所在地</td>
+                            <td>〒675-0027 兵庫県加古川市尾上町今福 215-1</td>
+                        </tr>
+                        <tr>
+                            <td>代表者</td>
+                            <td>竹中 康二</td>
+                        </tr>
+                        <tr>
+                            <td>TEL</td>
+                            <td>079-441-9470</td>
+                        </tr>
+                        <tr>
+                            <td>事業開始日</td>
+                            <td>平成19年8月2日</td>
+                        </tr>
+                        <tr>
+                            <td>古物商許可証（機械工具商）</td>
+                            <td>兵庫県公安委員会　第631550700042号</td>
+                        </tr>
+                        <tr>
+                            <td>資本金</td>
+                            <td>777万円</td>
+                        </tr>
+                        <tr>
+                            <td>事業内容</td>
+                            <td>
+                                <ul>
+                                    <li>中古の電子計測器・半導体製造装置の売買及びその仲介</li>
+                                    <li>古物の売買業</li>
+                                    <li>総合リース・レンタル業</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>取引金融機関</td>
+                            <td>
+                                <ul>
+                                    <li>三井住友銀行 加古川支店</li>
+                                    <li>但陽信用金庫 本店</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>納入実績</td>
+                            <td>
+                                <ul>
+                                    <li>北海道大学</li>
+                                    <li>東北大学</li>
+                                    <li>東京大学</li>
+                                    <li>上智大学</li>
+                                    <li>大阪大学</li>
+                                    <li>北里大学</li>
+                                    <li>早稲田大学</li>
+                                    <li>千葉工業大学</li>
+                                    <li>名古屋大学</li>
+                                    <li>東京都市大学</li>
+                                    <li>立命館大学</li>
+                                    <li>学習院大学</li>
+                                    <li>兵庫県立大学</li>
+                                    <li>東海大学</li>
+                                    <li>明石高専</li>
+                                    <li>東京理科大学</li>
+                                    <li>富山大学</li>
+                                    <li>東京農工大学</li>
+                                    <li>和歌山大学</li>
+                                    <li>大阪府立大学</li>
+                                    <li>島根大学</li>
+                                    <li>横浜国立大学</li>
+                                    <li>鹿児島大学</li>
+                                    <li>琉球大学</li>
+                                    <li>京セミ（株）</li>
+                                    <li>（株）スリーアール</li>
+                                    <li>情報通信研究機構</li>
+                                    <li>浜松フォトニクス（株）</li>
+                                    <li>三菱UFJリース</li>
+                                    <li>理化学研究所</li>
+                                    <li>九州計測器（株）</li>
+                                    <li>東日本電子計測器（株）</li>
+                                    <li>（株）システムブレイン</li>
+                                    <li>高山理化精機（株）</li>
+                                    <li>日本電計（株）</li>
+                                    <li>日本測器（株）</li>
+                                    <li>国華電機（株）</li>
+                                    <li>遠藤科学（株）</li>
+                                    <li>穂高電子（株）</li>
+                                    <li>東洋計測器（株）</li>
+                                    <li>西川計測（株）</li>
+                                    <li>（株）富士科学</li>
+                                    <li>Burgeon（台湾）</li>
+                                    <li>（株）第一科学</li>
+                                    <li>オザワ科学（株）</li>
+                                    <li>エムイー(株）</li>
+                                    <li>他(順不同・敬称略)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>123-456-6789</p>
                 </div>
                 <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
                 </div>
+                -->
             </div>
         </div>
+    </section>
+
+
+    <section id="contact">
+        <aside class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">お問合せ</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p>下記リンク先のフォームからお問合せください。↓</p>
+                    <p>
+                        <a href="{% url 'contact' %}" class="btn btn-primary btn-xl page-scroll">お問合せフォームはこちら</a>
+                    </p>
+                    <p>Copyright &copy;ToMoCA Co.,Ltd. All Rights Reserved.</p>
+                </div>
+                <!--
+                <div class="call-to-action">
+                    <h2>Free Download at Start Bootstrap!</h2>
+                    <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+                </div>
+                -->
+            </div>
+        </aside>
     </section>
 
     <!-- jQuery -->

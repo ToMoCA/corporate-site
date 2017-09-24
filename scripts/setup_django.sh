@@ -2,6 +2,8 @@
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
+source $SCRIPT_DIR/../.env/bin/activate
+
 cd $SCRIPT_DIR/../project/
 
 ./manage.py makemigrations
@@ -9,4 +11,6 @@ cd $SCRIPT_DIR/../project/
 ./manage.py createsuperuser
 # ./manage.py dumpdata products --format=json --indent=2 > products.json
 ./manage.py loaddata products
+./manage.py collectstatic
 ./manage.py runserver 0.0.0.0:8080
+

@@ -134,7 +134,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # CKEditor(ref. http://www.neuralsparrow.com/entry/2016/12/26/024416)
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_UPLOAD_PATH = 'uploads/'
-CKEDITOE_IMAGE_BACKEND = 'pillow'
+CKEDITOR_IMAGE_BACKEND = 'pillow'
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'full',

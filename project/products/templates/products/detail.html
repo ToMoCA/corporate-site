@@ -2,6 +2,7 @@
 
 {% block content %}
 
+{% load humanize %}
 
 <div class="panel panel-default">
 
@@ -23,7 +24,7 @@
             <h4>価格 / Price</h4>
         </u>
         <p>
-            {{ product.price }}
+            {{ product.price | intcomma}}
         </p>
 
         <u>

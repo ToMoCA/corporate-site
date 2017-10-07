@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load humanize %}
+
 <div class="panel panel-default">
     <div class="panel-heading">
         Product List
@@ -24,7 +26,7 @@
             {% for product in product_list %}
             <tr>
                 <td><a href="{% url 'products:detail' product.id %}">{{ product.product_text }}</a></td>
-                <td>{{ product.price }}</td>
+                <td>{{ product.price | intcomma}}</td>
                 <td>{{ product.brand }}</td>
                 <td>{{ product.category }}</td>
                 <td>{{ product.inventory_status }}</td>

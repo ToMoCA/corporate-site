@@ -16,6 +16,13 @@
     <div class="panel-body">
 
         <u>
+            <h4>製品識別番号 / Product ID</h4>
+        </u>
+        <p>
+            {{ product.id }}
+        </p>
+
+        <u>
             <h4>製品名 / Product Name</h4>
         </u>
         <p>
@@ -41,6 +48,41 @@
         </u>
         <p>
             {{ product.category }}
+        </p>
+
+        <u>
+            <h4>測定範囲 / Measurable Range</h4>
+        </u>
+        <p>
+            {{ product.measurable_range }}
+        </p>
+
+        <u>
+            <h4>オプション / Options</h4>
+        </u>
+        <p>
+            {{ product.option }}
+        </p>
+
+        <u>
+            <h4>シリアル番号 / Serial Number</h4>
+        </u>
+        <p>
+            {{ product.serial_number }}
+        </p>
+
+        <u>
+            <h4>ランク / Rank</h4>
+        </u>
+        <p>
+            {{ product.rank }}
+        </p>
+
+        <u>
+            <h4>製造年 / Year Of Manufacture</h4>
+        </u>
+        <p>
+            {{ product.year_of_manufacture |floatformat:"0" }}
         </p>
 
         <u>

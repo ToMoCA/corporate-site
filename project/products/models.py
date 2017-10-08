@@ -16,15 +16,20 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
-    product_text = models.CharField(max_length=128)
-    description = RichTextUploadingField()
-    price = models.IntegerField()
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    product_text        = models.CharField(max_length=128)
+    measurable_range    = models.CharField(max_length=128)
+    option              = models.CharField(max_length=128)
+    serial_number       = models.CharField(max_length=32)
+    rank                = models.CharField(max_length=8)
+    year_of_manufacture = models.CharField(max_length=8)
 
-    IN_STOCK = 'In Stock'
-    OUT_OF_STOCK = 'Out Of Stock'
-    NEED_TO_CONFIRM = 'Need To Confirm'
+    price               = models.IntegerField()
+
+    description = RichTextUploadingField()
+
+    IN_STOCK         = 'In Stock'
+    OUT_OF_STOCK     = 'Out Of Stock'
+    NEED_TO_CONFIRM  = 'Need To Confirm'
     INVENTORY_STATUS = (
         (IN_STOCK, IN_STOCK),
         (OUT_OF_STOCK, OUT_OF_STOCK),
@@ -36,6 +41,10 @@ class Product(models.Model):
         choices=INVENTORY_STATUS,
         default=IN_STOCK,
     )
+
+    brand    = models.ForeignKey(Brand, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
 
     def __str__(self):
         return self.product_text

@@ -47,7 +47,7 @@ class Product(models.Model):
 
 
     def __str__(self):
-        return self.product_text
+        return (self.product_text) + ":" + str(self.id)
 
     def __unicode__(self):
         return u"{}".format(self.your_field)

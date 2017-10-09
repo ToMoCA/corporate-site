@@ -108,6 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ja'
 
+# https://docs.djangoproject.com/en/1.11/ref/settings/#std:setting-NUMBER_GROUPING
+NUMBER_GROUPING=3 
+
 TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True

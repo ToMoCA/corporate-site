@@ -96,5 +96,5 @@ class CategoryView(generic.ListView):
     ordering = '-pk'
 
     def get_queryset(self):
-        self.category = get_object_or_404(Category, category_text__icontains=self.args[0])
+        self.category = get_object_or_404(Category, category_text=self.args[0])
         return Product.objects.filter(category=self.category)

@@ -150,7 +150,46 @@
                         ToMoCA で扱っている製品リストです。<br>
                         測定機器についてのご注文・お問い合わせは<a href="/contact">こちら</a><br>
                     </p>
+                    <!--
                     <a href="{% url 'products:index' %}" class="btn btn-primary btn-xl page-scroll">製品はこちら</a>
+                    -->
+
+                    <p>
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'スペクトラム' %}">スペクトラム・アナライザ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'クロスドメイン' %}">クロスドメイン・アナライザ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'ネットワーク' %}">ネットワーク・アナライザ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'FFTアナライザ' %}">FFTアナライザ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' '光パワーメータ' %}">光パワーメータ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' '光スペクトラム' %}">光スペクトラム・アナライザ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' '光スペクトラム' %}">DC/AC 標準電圧電流発生器</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'マルチメーター' %}">マルチメーター</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' '電波測定器' %}">電波測定器・EMI 測定器</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="{% url 'products:category' 'アクセサリー' %}">アクセサリー / パーツ</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </p>
                 </div>
             </div>
         </div>

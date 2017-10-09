@@ -1,7 +1,8 @@
 from django.views import generic
 from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404
 
-from .models import Product
+from .models import Product, Category
 
 def home_page(request):
     return render(request, 'products/index.html')
@@ -87,3 +88,13 @@ class DetailView(generic.DetailView):
 
     def get_queryset(self):
         return Product.objects.all()
+
+class CategoryView(generic.ListView):
+    template_name = 'products/list.html'
+    context_object_name = 'product_list'
+    # paginate_by = 5
+    ordering = '-pk'
+
+    def get_queryset(self):
+        self.category = get_object_or_404(Category, category_text__icontains=self.args[0])
+        return Product.objects.filter(category=self.category)

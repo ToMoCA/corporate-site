@@ -56,7 +56,7 @@ def contact(request):
             email = EmailMessage(
                 subject = "[ToMoCA] Thank you for contacting us",
                 body = content,
-                to = ["ks6088ts@gmail.com", email],
+                to = ["ks6088ts@gmail.com", "take@tomoca.jp", email],
             )
             email.send()
             return redirect('/')

@@ -12,12 +12,21 @@ categories = [
     "クロスドメインアナライザ",
     "光スペクトラムアナライザ",
     "ネットワークアナライザ",
+    "標準電圧電流発生器",
+    "マルチメーター",
+    "電波測定器",
+    "アクセサリー",
 ]
 
 brands = [
     "ADVANTEST",
     "AGILENT",
     "ANRITSU",
+    "KEYSIGHT",
+    "TEKTRONIX",
+    "YOKOGAWA",
+    "KENWOOD",
+    "KIKUSUI",
 ]
 
 

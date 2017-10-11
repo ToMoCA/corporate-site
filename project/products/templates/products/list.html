@@ -4,7 +4,7 @@
 
 {% load humanize %}
 
-<h3>製品リスト / Product List</h3>
+<h3>Category : {{ product_list.0.category }}</h3>
 
 <div class="panel panel-default">
 
@@ -21,7 +21,7 @@
                 <th>ID</th>
                 <th>Price</th>
                 <th>Brand</th>
-                <th>Category</th>
+                <th>Specification</th>
                 <th>Inventory Status</th>
             </tr>
             </thead>
@@ -33,7 +33,7 @@
                 <td>{{ product.id | stringformat:"05d"}}</td>
                 <td> ¥ {{ product.price | intcomma}}</td>
                 <td>{{ product.brand }}</td>
-                <td>{{ product.category }}</td>
+                <td>{{ product.measurable_range }}</td>
                 <td>{{ product.inventory_status }}</td>
             </tr>
             {% endfor %}

@@ -28,7 +28,13 @@
             <tbody>
             {% if product_list %}
             {% for product in product_list %}
+
+            {% if product.inventory_status == "Out Of Stock" %}
+            <tr style="text-decoration: line-through" class="danger">
+            {% else %}
             <tr>
+            {% endif %}
+
                 <td><a href="{% url 'products:detail' product.id %}">{{ product.product_text }}</a></td>
                 <td>{{ product.id | stringformat:"05d"}}</td>
                 <td> ¥ {{ product.price | intcomma}}</td>

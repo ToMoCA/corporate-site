@@ -28,11 +28,11 @@ class Product(models.Model):
     description = RichTextUploadingField()
 
     IN_STOCK         = 'In Stock'
-    OUT_OF_STOCK     = 'Out Of Stock'
+    SOLD     = 'Sold'
     NEED_TO_CONFIRM  = 'Need To Confirm'
     INVENTORY_STATUS = (
         (IN_STOCK, IN_STOCK),
-        (OUT_OF_STOCK, OUT_OF_STOCK),
+        (SOLD, SOLD),
         (NEED_TO_CONFIRM, NEED_TO_CONFIRM),
     )
 

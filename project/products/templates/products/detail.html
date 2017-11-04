@@ -43,7 +43,13 @@
             </tr>
             <tr>
                 <th scope="row" class="col-md-5">価格(税抜) / Price</th>
-                <td  class="col-md-7"> ¥ {{ product.price | intcomma}} </td>
+                <td  class="col-md-7">
+                {% if product.inventory_status == "Sold" %}
+                    ¥ --
+                {% else %}
+                    ¥ {{ product.price | intcomma}}
+                {% endif %}
+                </td>
             </tr>
             <tr>
                 <th scope="row" class="col-md-5"> メーカー / Brand </th>
@@ -71,7 +77,15 @@
             </tr>
             <tr>
                 <th scope="row" class="col-md-5"> 在庫状況 / Inventory Status </th>
-                <td  class="col-md-7"> {{ product.inventory_status }} </td>
+                <td  class="col-md-7">
+                {% if product.inventory_status == "Sold" %}
+                    <div style="color:red;">
+                {% else %}
+                    <div>
+                {% endif %}
+                    {{ product.inventory_status }}
+                    </div>
+                </td>
             </tr>
             <tr>
                 <th scope="row" class="col-md-5"> 詳細説明 / Description </th>

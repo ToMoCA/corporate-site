@@ -544,7 +544,7 @@
     "year_of_manufacture": "1998.0",
     "price": 0,
     "description": "<p>\u7ba1\u9762\u713c\u3051\u7121\u304f\u3001\u7dba\u9e97\uff01</p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 1
   }
@@ -1462,7 +1462,7 @@
     "year_of_manufacture": "2007",
     "price": 0,
     "description": "<p><strong>\u5149\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n(350\uff5e1000nm)<br />\r\n<br />\r\n<span style=\"color:#ff0000\">\u57fa\u6e96Ne\u30ec\u30fc\u30b6\u30fc\u7ba1<br />\r\n\u65b0\u54c1\u4ea4\u63db\u6e08\uff082015.10\uff09</span></strong><br />\r\n<br />\r\n<strong>\u5165\u529b\uff1aFC\u30b3\u30cd\u30af\u30bf</strong></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 5
   }
@@ -1479,7 +1479,7 @@
     "year_of_manufacture": "2000",
     "price": 0,
     "description": "<p><strong>\u5149\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n(600\uff5e1700nm)</strong><br />\r\n&nbsp;</p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 2,
     "category": 5
   }
@@ -1496,7 +1496,7 @@
     "year_of_manufacture": "2000",
     "price": 0,
     "description": "<p><strong>&nbsp;\u5149\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n(350\uff5e1750nm)</strong><br />\r\n<br />\r\n<strong>\u30d7\u30ea\u30f3\u30bf\u5185\u8535</strong><br />\r\n<br />\r\n<strong><span style=\"color:#ff0000\">CRT &amp;<br />\r\n\u30d5\u30ed\u30f3\u30c8\u30b9\u30a4\u30c3\u30c1<br />\r\n\u65b0\u54c1\u4ea4\u63db\u6e08</span></strong></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 5
   }
@@ -1513,7 +1513,7 @@
     "year_of_manufacture": "1997",
     "price": 0,
     "description": "<p><strong>\u5149\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n(350\uff5e1750nm)<br />\r\n<br />\r\n\u5165\u529b\uff1aFC\u30b3\u30cd\u30af\u30bf<br />\r\n<br />\r\n<span style=\"color:#ff0000\">\u57fa\u6e96Ne\u30ec\u30fc\u30b6\u30fc\u7ba1</span><br />\r\n<span style=\"color:#ff0000\">\u65b0\u54c1\u4ea4\u63db\u6e08\uff082017.\uff12\uff09</span></strong></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 5
   }
@@ -1530,7 +1530,7 @@
     "year_of_manufacture": "1998",
     "price": 0,
     "description": "<p><strong>\u5149\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n(350\uff5e1750nm)<br />\r\n<br />\r\n\u5165\u529b\uff1aSC\u30b3\u30cd\u30af\u30bf<br />\r\n<br />\r\n1998\u5e7412\u6708\u88fd\u9020\u54c1</strong><br />\r\n&nbsp;</p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 5
   }
@@ -1615,7 +1615,7 @@
     "year_of_manufacture": "-",
     "price": 0,
     "description": "<p>TDS3054C</p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 7,
     "category": 14
   }
@@ -1785,7 +1785,7 @@
     "year_of_manufacture": "1999",
     "price": 0,
     "description": "<p><strong>\u30b7\u30b0\u30ca\u30eb\u30fb<br />\r\n\u30b8\u30a7\u30cd\u30ec\u30fc\u30bf\u30fc<br />\r\n<br />\r\n125KHz-2080MHz</strong><br />\r\n<br />\r\n<strong>Option: 01</strong></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 3,
     "category": 15
   }
@@ -2074,7 +2074,7 @@
     "year_of_manufacture": "2006",
     "price": 0,
     "description": "<p><span style=\"font-size:16px\"><strong>\u9ad8\u7cbe\u5ea6\u30c7\u30b8\u30bf\u30eb\u30fb\u30de\u30eb\u30c1\u30e1\u30fc\u30bf<br />\r\n8\u6841\u534a<br />\r\n\u3000\uff27\uff30\uff0d\uff29\uff22\u4ed8&nbsp;<br />\r\n<br />\r\nOPT: 002 \u4ed8<br />\r\n<br />\r\n<span style=\"color:#ff0000\">\u3000\u7dba\u9e97</span></strong></span></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 2,
     "category": 7
   }
@@ -2091,7 +2091,7 @@
     "year_of_manufacture": "2012",
     "price": 0,
     "description": "<p><span style=\"font-size:14px\"><strong>\u76f4\u6d41\u96fb\u5727\u96fb\u6d41<br />\r\n\u767a\u751f\u5668<br />\r\n<br />\r\n0\uff5e&plusmn;32V,\u3000<br />\r\n0\uff5e&plusmn;220mA<br />\r\n\u53d6\u8aac\u3001\u30aa\u30ea\u30b8\u30ca\u30eb\u7bb1\u4ed8<br />\r\n<br />\r\n<span style=\"color:#ff0000\">\u65b0\u54c1\u540c\u69d8</span><span style=\"color:#000099\">\uff08\u672a\u4f7f\u7528\u4fdd\u7ba1\u54c1\uff09</span></strong></span></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 5,
     "category": 10
   }
@@ -2227,7 +2227,7 @@
     "year_of_manufacture": "2010",
     "price": 0,
     "description": "<p><strong><span style=\"font-size:14px\"><span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\u30cf\u30f3\u30c9\u30d8\u30eb\u30c9\u30fb\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30fb\u30a2\u30ca\u30e9\u30a4\u30b6</span></span><br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\uff08\uff11\uff10\uff10KHz-\uff13GHz\uff09</span></span><br />\r\n<br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\u548c\u6587\u53d6\u8aac</span></span><br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\u30ad\u30e3\u30ea\u30f3\u30b0\u30b1\u30fc\u30b9</span></span><br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\u6a19\u6e96\u4ed8\u5c5e\u54c1</span></span><br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">\u65b0\u54c1\u30d0\u30c3\u30c6\u30ea\u30fc\u4ed8</span></span><br />\r\n<br />\r\n<span style=\"color:#ff0000\">ALL\u3000\u65b0\u54c1</span><br />\r\n<span style=\"color:#ff0000\">\u30e1\u30fc\u30ab\u30fc\uff13\u5e74\u4fdd\u8a3c\u4ed8</span><br />\r\n<span style=\"color:#ff0000\">\u8d85\u304a\u8cb7\u5f97\u54c1</span></span></strong></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 2,
     "category": 1
   }
@@ -2261,7 +2261,7 @@
     "year_of_manufacture": "1993",
     "price": 0,
     "description": "<p><span style=\"font-size:14px\"><strong>\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30fb\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n<br />\r\n\uff110Hz-120MHz<br />\r\n<br />\r\nTG\u3000\u6a19\u6e96\u5185\u8535<br />\r\n\u30d7\u30ea\u30a2\u30f3\u30d7\u5185\u8535<br />\r\n<br />\r\nPhase,\u3000Dealy<br />\r\n\u6e2c\u5b9a\u53ef\u80fd</strong></span></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 1,
     "category": 1
   }
@@ -2278,7 +2278,7 @@
     "year_of_manufacture": "2006",
     "price": 0,
     "description": "<p><span style=\"font-size:14px\"><strong>\u30cf\u30f3\u30c9\u30d8\u30eb\u30c9\u30fb\u30b9\u30da\u30af\u30c8\u30e9\u30e0\u30fb\u30a2\u30ca\u30e9\u30a4\u30b6<br />\r\n<br />\r\n\uff11\uff10\uff10KHz-3GHz<br />\r\n<br />\r\n\u30aa\u30d7\u30b7\u30e7\u30f3\u3000TG\u4ed8<br />\r\n\uff08\u30b9\u30df\u30b9\u30c1\u30e3\u30fc\u30c8\u6e2c\u5b9a\u53ef\u80fd\uff09<br />\r\nOPEN,SHORT,LOAD\u4ed8<br />\r\n\u5c02\u7528\u30ad\u30e3\u30ea\u30f3\u30b0\u30b1\u30fc\u30b9\u3000\u53d6\u8aac,AC\u30a2\u30c0\u30d7\u30bf\u30fc\u4ed8<br />\r\n<span style=\"color:#ff0000\">\u5185\u8535\u30d0\u30c3\u30c6\u30ea\u30fc\u65b0\u54c1</span>\u4ea4\u63db\u6e08</strong><br />\r\n<span style=\"color:#000000\"><span style=\"font-family:Meiryo\">Made in Germany</span></span></span></p>",
-    "inventory_status": "Out Of Stock",
+    "inventory_status": "Sold",
     "brand": 9,
     "category": 1
   }

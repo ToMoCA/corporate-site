@@ -29,7 +29,7 @@
             {% if product_list %}
             {% for product in product_list %}
 
-            {% if product.inventory_status == "Out Of Stock" %}
+            {% if product.inventory_status == "Sold" %}
             <tr style="text-decoration: line-through" class="danger">
             {% else %}
             <tr>
